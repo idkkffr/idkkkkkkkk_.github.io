@@ -1,50 +1,86 @@
+/* styles.css */
 body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
+    padding: 1rem 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 1em;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
 }
 
 section {
-    padding: 2em;
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    margin: auto;
 }
 
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5em;
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .project {
-    margin-bottom: 1.5em;
+    margin-bottom: 2rem;
 }
 
 footer {
     text-align: center;
-    padding: 1em 0;
-    background-color: #f1f1f1;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
 }
 
+@media (max-width: 768px) {
+    section {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
