@@ -27,29 +27,50 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 30px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #ddd;
+    opacity: .5;
+}
+
+header h3 {
+  color: #8a7151;
+}
+
+hr {
+  text-align: center;
+  background-color: #8a7151;
+  height: 1px;
+  border: none;
 }
 
 section {
     padding: 2rem;
-    margin: 1rem auto;
+    margin: .8rem auto;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0, .4);
     max-width: 400px;
 }
 
-h1, h2, h3 {
+h1 {
+  margin_bottom: 1.5;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -59,11 +80,28 @@ p {
     margin-bottom: 1rem;
 }
 
+.disc {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+}
+
+.rblx {
+  padding: -1rem;
+  margin: -1.15rem;
+  width: 38px;
+}
+
+.paypal{
+  padding: -.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+}
+
 .project {
     margin-bottom: 2rem;
 }
-
-/* styles.css */
 
 .contact-link {
     color: #ab9168; /* Blue color for links */
@@ -74,7 +112,7 @@ p {
 
 .contact-link:hover {
     color: #473921; /* Darker blue on hover */
-    /*text-decoration: underline;  Underline on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 footer {
